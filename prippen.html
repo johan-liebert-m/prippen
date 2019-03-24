@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <style>
+            ::selection {background-color: silver;opacity: 0.1}
+            body { margin: 2%;background-color: #2e9fff;font-family: "Calibri";font-size: 25px}
+            button { display: inline-block;width: auto;height: 75px;font-size: 25px;background-color: #2556a2;color: white;border: 2px solid black;border-radius: 10px }
+            button:hover { background-color: #17448b;cursor: pointer;transition: all .2s }
+            button:focus { outline: 0 }
+            input { display: inline-block;margin: 0px 0px 7px 7px;width: 100px;height: 70px;font-size: 20px;border: 2px solid transparent;border-radius: 10px;text-align: center;background-color: #fff;color: #656565 }
+            input:focus { outline: 0;border: 2px solid #2556a2;background-color: white;color: #1c1c1c }
+            #result1, #result2, #result3, #result4, #result5, #result6, #result7 {font-size: 40px}
+        </style>
+    </head>
+    
+<body dir="rtl">
+
+<input type="text" id="str1">
+<input type="text" id="str2">
+<input type="text" id="str3">
+<input type="text" id="str4">
+<input type="text" id="str5">
+<input type="text" id="str6">
+<input type="text" id="str7">   
+<button onclick="myFunction()">المقلوبية</button>
+<p><b id="result1"></b><b id="result2"></b><b id="result3"></b><b id="result4"></b><b id="result5"></b><b id="result6"></b><b id="result7"></b></p>
+
+<script>
+function myFunction() {
+    
+    var str1 = document.getElementById("str1").value;
+    if(str1.length >= 2){if(str1.slice(0,1) == "س"){
+    document.getElementById("result1").innerHTML = "سس" + str1.slice(2) + " يا" + str1.slice(1,2) + "ا "}
+    else {document.getElementById("result1").innerHTML = "س" + str1.slice(1) + " يا" + str1.slice(0,1) + "ا "}}
+    else{document.getElementById("result1").innerHTML = ""}
+    
+    var str2 = document.getElementById("str2").value;
+    if(str2.length >= 2){if(str2.slice(0,1) == "س"){
+    document.getElementById("result2").innerHTML = "سس" + str2.slice(2) + " يا" + str2.slice(1,2) + "ا "}
+    else {document.getElementById("result2").innerHTML = "س" + str2.slice(1) + " يا" + str2.slice(0,1) + "ا "}}
+    else{document.getElementById("result2").innerHTML = ""}
+    
+    var str3 = document.getElementById("str3").value;
+    if(str3.length >= 2){if(str3.slice(0,1) == "س"){
+    document.getElementById("result3").innerHTML = "سس" + str3.slice(2) + " يا" + str3.slice(1,2) + "ا "}
+    else {document.getElementById("result3").innerHTML = "س" + str3.slice(1) + " يا" + str3.slice(0,1) + "ا "}}
+    else{document.getElementById("result3").innerHTML = ""}
+    
+    var str4 = document.getElementById("str4").value;
+    if(str4.length >= 2){if(str4.slice(0,1) == "س"){
+    document.getElementById("result4").innerHTML = "سس" + str4.slice(2) + " يا" + str4.slice(1,2) + "ا "}
+    else {document.getElementById("result4").innerHTML = "س" + str4.slice(1) + " يا" + str4.slice(0,1) + "ا "}}
+    else{document.getElementById("result4").innerHTML = ""}
+    
+    var str5 = document.getElementById("str5").value;
+    if(str5.length >= 2){if(str5.slice(0,1) == "س"){
+    document.getElementById("result5").innerHTML = "سس" + str5.slice(2) + " يا" + str5.slice(1,2) + "ا "}
+    else {document.getElementById("result5").innerHTML = "س" + str5.slice(1) + " يا" + str5.slice(0,1) + "ا "}}
+    else{document.getElementById("result5").innerHTML = ""}
+    
+    var str6 = document.getElementById("str6").value;
+    if(str6.length >= 2){if(str6.slice(0,1) == "س"){
+    document.getElementById("result6").innerHTML = "سس" + str6.slice(2) + " يا" + str6.slice(1,2) + "ا "}
+    else {document.getElementById("result6").innerHTML = "س" + str6.slice(1) + " يا" + str6.slice(0,1) + "ا "}}
+    else{document.getElementById("result6").innerHTML = ""}
+    
+    var str7 = document.getElementById("str7").value;
+    if(str7.length >= 2){if(str7.slice(0,1) == "س"){
+    document.getElementById("result7").innerHTML = "سس" + str7.slice(2) + " يا" + str7.slice(1,2) + "ا "}
+    else {document.getElementById("result7").innerHTML = "س" + str7.slice(1) + " يا" + str7.slice(0,1) + "ا "}}
+    else{document.getElementById("result7").innerHTML = ""}
+    
+}
+</script>
+
+</body>
+</html>
